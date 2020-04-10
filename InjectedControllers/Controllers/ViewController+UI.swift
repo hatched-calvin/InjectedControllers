@@ -10,7 +10,13 @@ import Foundation
 import UIKit
 
 extension ViewController {
-    func inject() {
+    override func loadView() {
+        super.loadView()
+        
+        setupLabel()
+    }
+    
+    func setupLabel() {
         label = UILabel()
         label.text = "Hello Injected World"
         view.addSubview(label)

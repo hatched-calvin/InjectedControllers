@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ViewController: BaseViewController {
+class ViewController: UIViewController {
     @Injected var label: UILabel
 }
